@@ -1,0 +1,33 @@
+.head-bg{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    z-index: -5;
+    display: block;
+}
+
+.bg-grey{
+    z-index: -4;
+    position: absolute;
+    background-color: #e6e6e6;
+    max-height: 600px;
+    height: 600px;
+    width: 100%;
+    background-repeat: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 65%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 65%);
+}
+.bg-blue-grey{
+    position: relative;
+    z-index: -3;
+    background-color: #d1dde8;
+    max-height: 600px;
+    height: 100vh;
+    background-repeat: none;
+    -webkit-clip-path: polygon(66% 0, 100% 0, 100% 50%, 52% 57%);
+    clip-path: polygon(66% 0, 100% 0, 100% 50%, 52% 57%);
+}
+.nav{
+    z-index: 2;
+}

@@ -1,0 +1,233 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+header img{
+    max-width: 200px;
+    margin-right: auto;
+}
+.nav{
+    display: flex;
+    z-index: 1;
+    max-width: 100%;
+    align-items: center;
+}
+.navbar-toggler{
+    position: absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span{
+    color: var(--white);
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"]{
+    display: none;
+}
+
+.nav span{
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: var(--size-20);
+}
+
+.nav ul{
+    display: flex;
+    margin: 15px;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.nav-link{
+    color: var(--font-color-base);
+    font-size: var(--size-20);
+}
+
+.blue{
+    color: var(--font-blue);
+}
+
+/* header and section 1 background */
+.head-bg{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+    z-index: -5;
+    display: block;
+}
+
+.bg-grey{
+    z-index: -3;
+    position: absolute;
+    background-color: #e6e6e6;
+    max-height: 600px;
+    height: 600px;
+    width: 100%;
+    background-repeat: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 65%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 65%);
+}
+.bg-blue-grey{
+    position: relative;
+    z-index: -1;
+    background-color: #d1dde8;
+    max-height: 600px;
+    height: 100vh;
+    background-repeat: none;
+    -webkit-clip-path: polygon(66% 0, 100% 0, 100% 50%, 52% 57%);
+    clip-path: polygon(66% 0, 100% 0, 100% 50%, 52% 57%);
+}
+
+/* section 1 styles */
+.empower{
+    display: flex;
+    margin: 20px;
+}
+
+.empower-text{
+   flex: 0.5;
+   margin: 20px;
+}
+.empower-text h2{
+    color: var(--black);
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.empower-text p{
+    font-size: 25px;
+}
+
+.play-btn{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+.play-btn i{
+    margin: 8px;
+    font-size: 20px;
+}
+
+.learn-more{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.empower-logos{
+    flex: .6;
+}
+.em-logo{
+    position: relative;
+    max-width: 80px;
+    border-radius: 50%;
+    padding:5px;
+    background-color: var(--white);
+    margin: 15px;
+}
+
+#google-logo{
+    max-width: 50px;
+    left: 30%;
+}
+#atlassian{
+    left: 50%;
+    top: 10px;
+}
+#asana{
+    float: right;
+    padding: 10px;
+}
+#paypal{
+    top: 40%;
+}
+#weave{
+    left: 35%;
+    top: 40%;
+}
+#google-a{
+    max-width: 50px;
+    bottom: -70%;
+}
+#google-cal{
+    top: 75%;
+    right: -22%;
+}
+
+/* key benefits section */
+
+.key-cards{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 50px;
+    margin: 15px 50px; */
+}
+
+.key-text{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.key-text h1{font-size: 50px;}
+
+.key-text h1, .card h3{
+    color: var(--black);
+}
+
+.card{
+    max-width: 350px;
+    font-size: 25px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(48, 63, 100, 0.25);
+    border: 1px solid rgba(48, 63, 100, 0.15);
+}
+
+.card img{
+    max-width: 50px;
+    margin: 10px 0 0;
+}
+
+.green-btn{
+    background-color: #39bf8e;
+    color:  var(--white);
+    border-radius: 25px;
+    padding: 0 15px;
+}
+.inline-sketch{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* software for people section */
+
+.video-box{ 
+    background-color: #e9edf2;
+    position: absolute;
+    max-width: 100%;
+    width: 100% ;
+    max-height: 500px;
+    margin: 50px 20px;
+}
+
+.video-box img{
+    max-width: 700px;
+    position: relative;
+    left: 40%;
+}
+
+.video-text{
+    color: var(--black);
+    max-width: 500px;
+    font-size: 30px;
+    vertical-align: middle;
+}
